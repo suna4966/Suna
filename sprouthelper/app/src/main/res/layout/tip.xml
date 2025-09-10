@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/bottomBar">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tipback"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/mole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mole"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#FCD3D9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이번 주 절약 팁"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:textSize="24dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginLeft="100dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OO카페 멤버십 가입시\n 10% 할인 쿠폰"
+                android:fontFamily="@font/pretendard_semibold"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:layout_marginTop="380dp"
+                android:lineSpacingExtra="4dp"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡 절약 방법:  OO카페 앱에서 멤버십 가입 시\n
+  모든 음료 10% 할인 쿠폰 증정"
+                android:fontFamily="@font/pretendard_regular"
+                android:textSize="20dp"
+                android:layout_marginTop="500dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🕒 적용 기간: 가입 후 한달간"
+                android:fontFamily="@font/pretendard_regular"
+                android:textSize="20dp"
+                android:layout_marginTop="580dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[추천 절약 팁 더보기]\n
+- 커피 대신 텀블러 사용 시 할인\n - 지하철 환승 카드 포인트 받기"
+                android:fontFamily="@font/pretendard_regular"
+                android:textSize="20dp"
+                android:layout_marginTop="650dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="left"/>
+            <ImageButton
+                android:id="@+id/tipbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="750dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/tipbtn"/>
+        </FrameLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/bottomBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/underbox"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/homeoff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/homeoff" />
+            <ImageView
+                android:id="@+id/caloff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/caloff" />
+            <ImageView
+                android:id="@+id/monon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/monon" />
+            <ImageView
+                android:id="@+id/chatoff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/chatoff" />
+            <ImageView
+                android:id="@+id/myoff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/myoff" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

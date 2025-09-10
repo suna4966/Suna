@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 배경 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp" />
+            <solid android:color="#f2f2f2" />
+        </shape>
+    </item>
+
+    <!-- 중간 진행 상태(선택사항) -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="50dp" />
+                <solid android:color="#80C8E6C9" />
+            </shape>
+        </clip>
+    </item>
+
+    <!-- 실제 진행 상태 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape android:shape="rectangle">
+                <corners android:radius="50dp" />
+                <gradient
+                    android:startColor="#2FD379"
+                    android:endColor="#25958B"
+                    android:angle="0" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

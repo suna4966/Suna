@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <ScrollView
+        android:id="@+id/mainScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/bottomBar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/mole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mole"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:background="#fafafa"/>
+            <ImageButton
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/save"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="16dp"
+                android:background="#fafafa"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="95dp"
+                android:background="@drawable/cirback"/>
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="128dp"
+                android:background="@drawable/c2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:layout_marginLeft="80dp"
+                android:text="노리2 체크카드(KB Pay)"
+                android:textSize="26dp"
+                android:fontFamily="@font/pretendard_semibold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="420dp"
+                android:layout_marginLeft="165dp"
+                android:text="KB 국민카드"
+                android:textSize="18dp"
+                android:fontFamily="@font/pretendard_regular"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/reback"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="480dp"
+                android:layout_marginBottom="50dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="☕ 커피,모바일,문화 10% 할인"
+                android:layout_marginTop="515dp"
+                android:layout_marginLeft="70dp"
+                android:textSize="22dp"
+                android:fontFamily="@font/pretendard_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏪 뷰티, 편의점 5% 할인"
+                android:layout_marginTop="575dp"
+                android:layout_marginLeft="70dp"
+                android:textSize="22dp"
+                android:fontFamily="@font/pretendard_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💳 KB Pay 2% 추가 할인"
+                android:layout_marginTop="635dp"
+                android:layout_marginLeft="70dp"
+                android:textSize="22dp"
+                android:fontFamily="@font/pretendard_regular"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/bottomBarBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/underbox"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/homeon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/homeon" />
+            <ImageView
+                android:id="@+id/caloff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/caloff" />
+            <ImageView
+                android:id="@+id/monoff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/monoff" />
+            <ImageView
+                android:id="@+id/chatoff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/chatoff" />
+            <ImageView
+                android:id="@+id/myoff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/myoff" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
